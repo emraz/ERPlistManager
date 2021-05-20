@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93C2446826561FA000DC71DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C2446726561FA000DC71DC /* AppDelegate.swift */; };
+		93C2446A26561FA000DC71DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C2446926561FA000DC71DC /* SceneDelegate.swift */; };
+		93C2446C26561FA000DC71DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C2446B26561FA000DC71DC /* ViewController.swift */; };
+		93C2446F26561FA000DC71DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C2446D26561FA000DC71DC /* Main.storyboard */; };
+		93C2447126561FA100DC71DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C2447026561FA100DC71DC /* Assets.xcassets */; };
+		93C2447426561FA100DC71DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C2447226561FA100DC71DC /* LaunchScreen.storyboard */; };
+		93C2447F26561FA200DC71DC /* ERPlistManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C2447E26561FA200DC71DC /* ERPlistManagerTests.swift */; };
+		93C2448A26561FA200DC71DC /* ERPlistManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C2448926561FA200DC71DC /* ERPlistManagerUITests.swift */; };
+		93C2449926561FEB00DC71DC /* ERPlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C2449826561FEB00DC71DC /* ERPlistManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93C2447B26561FA200DC71DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93C2445C26561FA000DC71DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93C2446326561FA000DC71DC;
+			remoteInfo = ERPlistManager;
+		};
+		93C2448626561FA200DC71DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93C2445C26561FA000DC71DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93C2446326561FA000DC71DC;
+			remoteInfo = ERPlistManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		93C2446426561FA000DC71DC /* ERPlistManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ERPlistManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C2446726561FA000DC71DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93C2446926561FA000DC71DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		93C2446B26561FA000DC71DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93C2446E26561FA000DC71DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93C2447026561FA100DC71DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93C2447326561FA100DC71DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93C2447526561FA100DC71DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93C2447A26561FA200DC71DC /* ERPlistManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ERPlistManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C2447E26561FA200DC71DC /* ERPlistManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERPlistManagerTests.swift; sourceTree = "<group>"; };
+		93C2448026561FA200DC71DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93C2448526561FA200DC71DC /* ERPlistManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ERPlistManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C2448926561FA200DC71DC /* ERPlistManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERPlistManagerUITests.swift; sourceTree = "<group>"; };
+		93C2448B26561FA200DC71DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93C2449826561FEB00DC71DC /* ERPlistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERPlistManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93C2446126561FA000DC71DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C2447726561FA200DC71DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C2448226561FA200DC71DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93C2445B26561FA000DC71DC = {
+			isa = PBXGroup;
+			children = (
+				93C2446626561FA000DC71DC /* ERPlistManager */,
+				93C2447D26561FA200DC71DC /* ERPlistManagerTests */,
+				93C2448826561FA200DC71DC /* ERPlistManagerUITests */,
+				93C2446526561FA000DC71DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93C2446526561FA000DC71DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93C2446426561FA000DC71DC /* ERPlistManager.app */,
+				93C2447A26561FA200DC71DC /* ERPlistManagerTests.xctest */,
+				93C2448526561FA200DC71DC /* ERPlistManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93C2446626561FA000DC71DC /* ERPlistManager */ = {
+			isa = PBXGroup;
+			children = (
+				93C2446726561FA000DC71DC /* AppDelegate.swift */,
+				93C2446926561FA000DC71DC /* SceneDelegate.swift */,
+				93C2446B26561FA000DC71DC /* ViewController.swift */,
+				93C2449826561FEB00DC71DC /* ERPlistManager.swift */,
+				93C2446D26561FA000DC71DC /* Main.storyboard */,
+				93C2447026561FA100DC71DC /* Assets.xcassets */,
+				93C2447226561FA100DC71DC /* LaunchScreen.storyboard */,
+				93C2447526561FA100DC71DC /* Info.plist */,
+			);
+			path = ERPlistManager;
+			sourceTree = "<group>";
+		};
+		93C2447D26561FA200DC71DC /* ERPlistManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				93C2447E26561FA200DC71DC /* ERPlistManagerTests.swift */,
+				93C2448026561FA200DC71DC /* Info.plist */,
+			);
+			path = ERPlistManagerTests;
+			sourceTree = "<group>";
+		};
+		93C2448826561FA200DC71DC /* ERPlistManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				93C2448926561FA200DC71DC /* ERPlistManagerUITests.swift */,
+				93C2448B26561FA200DC71DC /* Info.plist */,
+			);
+			path = ERPlistManagerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93C2446326561FA000DC71DC /* ERPlistManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93C2448E26561FA200DC71DC /* Build configuration list for PBXNativeTarget "ERPlistManager" */;
+			buildPhases = (
+				93C2446026561FA000DC71DC /* Sources */,
+				93C2446126561FA000DC71DC /* Frameworks */,
+				93C2446226561FA000DC71DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ERPlistManager;
+			productName = ERPlistManager;
+			productReference = 93C2446426561FA000DC71DC /* ERPlistManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93C2447926561FA200DC71DC /* ERPlistManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93C2449126561FA200DC71DC /* Build configuration list for PBXNativeTarget "ERPlistManagerTests" */;
+			buildPhases = (
+				93C2447626561FA200DC71DC /* Sources */,
+				93C2447726561FA200DC71DC /* Frameworks */,
+				93C2447826561FA200DC71DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93C2447C26561FA200DC71DC /* PBXTargetDependency */,
+			);
+			name = ERPlistManagerTests;
+			productName = ERPlistManagerTests;
+			productReference = 93C2447A26561FA200DC71DC /* ERPlistManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93C2448426561FA200DC71DC /* ERPlistManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93C2449426561FA200DC71DC /* Build configuration list for PBXNativeTarget "ERPlistManagerUITests" */;
+			buildPhases = (
+				93C2448126561FA200DC71DC /* Sources */,
+				93C2448226561FA200DC71DC /* Frameworks */,
+				93C2448326561FA200DC71DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93C2448726561FA200DC71DC /* PBXTargetDependency */,
+			);
+			name = ERPlistManagerUITests;
+			productName = ERPlistManagerUITests;
+			productReference = 93C2448526561FA200DC71DC /* ERPlistManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93C2445C26561FA000DC71DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					93C2446326561FA000DC71DC = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					93C2447926561FA200DC71DC = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 93C2446326561FA000DC71DC;
+					};
+					93C2448426561FA200DC71DC = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 93C2446326561FA000DC71DC;
+					};
+				};
+			};
+			buildConfigurationList = 93C2445F26561FA000DC71DC /* Build configuration list for PBXProject "ERPlistManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93C2445B26561FA000DC71DC;
+			productRefGroup = 93C2446526561FA000DC71DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93C2446326561FA000DC71DC /* ERPlistManager */,
+				93C2447926561FA200DC71DC /* ERPlistManagerTests */,
+				93C2448426561FA200DC71DC /* ERPlistManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93C2446226561FA000DC71DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C2447426561FA100DC71DC /* LaunchScreen.storyboard in Resources */,
+				93C2447126561FA100DC71DC /* Assets.xcassets in Resources */,
+				93C2446F26561FA000DC71DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C2447826561FA200DC71DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C2448326561FA200DC71DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93C2446026561FA000DC71DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C2446C26561FA000DC71DC /* ViewController.swift in Sources */,
+				93C2449926561FEB00DC71DC /* ERPlistManager.swift in Sources */,
+				93C2446826561FA000DC71DC /* AppDelegate.swift in Sources */,
+				93C2446A26561FA000DC71DC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C2447626561FA200DC71DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C2447F26561FA200DC71DC /* ERPlistManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C2448126561FA200DC71DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C2448A26561FA200DC71DC /* ERPlistManagerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93C2447C26561FA200DC71DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93C2446326561FA000DC71DC /* ERPlistManager */;
+			targetProxy = 93C2447B26561FA200DC71DC /* PBXContainerItemProxy */;
+		};
+		93C2448726561FA200DC71DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93C2446326561FA000DC71DC /* ERPlistManager */;
+			targetProxy = 93C2448626561FA200DC71DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93C2446D26561FA000DC71DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93C2446E26561FA000DC71DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93C2447226561FA100DC71DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93C2447326561FA100DC71DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93C2448C26561FA200DC71DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93C2448D26561FA200DC71DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93C2448F26561FA200DC71DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H456FFSK68;
+				INFOPLIST_FILE = ERPlistManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emraz.ERPlistManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93C2449026561FA200DC71DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H456FFSK68;
+				INFOPLIST_FILE = ERPlistManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emraz.ERPlistManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		93C2449226561FA200DC71DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H456FFSK68;
+				INFOPLIST_FILE = ERPlistManagerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emraz.ERPlistManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ERPlistManager.app/ERPlistManager";
+			};
+			name = Debug;
+		};
+		93C2449326561FA200DC71DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H456FFSK68;
+				INFOPLIST_FILE = ERPlistManagerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emraz.ERPlistManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ERPlistManager.app/ERPlistManager";
+			};
+			name = Release;
+		};
+		93C2449526561FA200DC71DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H456FFSK68;
+				INFOPLIST_FILE = ERPlistManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emraz.ERPlistManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ERPlistManager;
+			};
+			name = Debug;
+		};
+		93C2449626561FA200DC71DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H456FFSK68;
+				INFOPLIST_FILE = ERPlistManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emraz.ERPlistManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ERPlistManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93C2445F26561FA000DC71DC /* Build configuration list for PBXProject "ERPlistManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C2448C26561FA200DC71DC /* Debug */,
+				93C2448D26561FA200DC71DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93C2448E26561FA200DC71DC /* Build configuration list for PBXNativeTarget "ERPlistManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C2448F26561FA200DC71DC /* Debug */,
+				93C2449026561FA200DC71DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93C2449126561FA200DC71DC /* Build configuration list for PBXNativeTarget "ERPlistManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C2449226561FA200DC71DC /* Debug */,
+				93C2449326561FA200DC71DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93C2449426561FA200DC71DC /* Build configuration list for PBXNativeTarget "ERPlistManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C2449526561FA200DC71DC /* Debug */,
+				93C2449626561FA200DC71DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93C2445C26561FA000DC71DC /* Project object */;
+}
