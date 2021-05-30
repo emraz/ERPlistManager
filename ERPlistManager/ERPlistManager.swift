@@ -14,6 +14,68 @@ class ERPlistManager: NSObject {
         var isExist = false
         
         //Get the documents directory path
+        let path = self.getDocumentsDirectoryPathforFile(name)
+        let fileManager = FileManager.default
+        
+        //To check in Documents folder
+        isExist = fileManager.fileExists(atPath: path)
+        if !isExist {
+            //To check in main bundle
+            let fileName = name.components(separatedBy: ".")[0]
+            if Bundle.main.path(forResource: fileName, ofType: "plist") != nil {
+                isExist = true
+            }
+        }
+        
+        return isExist
+    }
+    
+    class func copyPListFromBundleToDocumentsDirectory(_ name: String, _ destFolder: String) -> (Bool, String) {
+                
+        var isSuccess = false
+        var message = ""
+        
+        //Get the documents directory path
+        let subDir = (destFolder.isEmpty) ? name : "\(destFolder)/\(name)"
+
+        let destPath = self.getDocumentsDirectoryPathforFile(subDir)
+        let fileManager = FileManager.default
+        print(destPath)
+        
+        //To check in Documents folder
+        if !fileManager.fileExists(atPath: destPath) {
+            //To check in main bundle
+            let fileName = name.components(separatedBy: ".")[0]
+            if let sPath =  Bundle.main.path(forResource: fileName, ofType: "plist") {
+                
+                do {
+                    try FileManager.default.copyItem(atPath: sPath, toPath: destPath)
+                    isSuccess = true
+                    message = "Plist copied successfully"
+                    
+                } catch {
+                    isSuccess = false
+                    message = "Error: unable to copy plist: \(error)"
+                }
+                return (isSuccess, message)
+            }
+            else {
+                isSuccess = false
+                message = "Plist not found in Main Bundle"
+            }
+        }
+        else {
+            isSuccess = false
+            message = "Plist Already Exist"
+        }
+        
+        return (isSuccess, message)
+    }
+    
+    class func getPListPath(byName name: String) -> String {
+        
+        var isExist = false
+
         var path = self.getDocumentsDirectoryPathforFile(name)
         let fileManager = FileManager.default
         
@@ -22,53 +84,28 @@ class ERPlistManager: NSObject {
         if !isExist {
             //To check in main bundle
             let fileName = name.components(separatedBy: ".")[0]
-            path = Bundle.main.path(forResource: fileName, ofType: "plist") ?? ""
-            
-            if(path.count > 0) {
+            if let pPath =  Bundle.main.path(forResource: fileName, ofType: "plist") {
                 isExist = true
+                path = pPath
             }
         }
         
-        return isExist
+        return path
     }
     
-    class func createPListwithName(_ name: String) {
+    class func getPListURL(byName name: String) -> URL {
         
-        //Crete file in documents directory
-        //Get the documents directory path
-        let documentsDirectory = FileManager.documentsDir()
-        
-        var path = URL(fileURLWithPath: documentsDirectory).appendingPathComponent(name).path
+        let pPath = self.getDocumentsDirectoryPathforFile(name)
         let fileManager = FileManager.default
-        
-        if !fileManager.fileExists(atPath: path) {
-            path = URL(fileURLWithPath: documentsDirectory).appendingPathComponent(name).path
-        }
-        
-        var data: [AnyHashable : Any]?
-        
-        if fileManager.fileExists(atPath: path) {
-            data = NSDictionary(contentsOfFile: path) as Dictionary?
-        } else {
-            // If the file doesn’t exist, create an empty dictionary
-            data = [:]
-        }
-        (data as NSDictionary?)?.write(toFile: path, atomically: true)
-    }
-    
-    class func getPListPath(byName name: String) -> String {
-        
-        var pPath = self.getDocumentsDirectoryPathforFile(name)
-        let fileManager = FileManager.default
+        var url = URL(fileURLWithPath: pPath)
         
         if !fileManager.fileExists(atPath: pPath) {
             
             let fileName = name.components(separatedBy: ".")[0]
-            
-            pPath = Bundle.main.path(forResource: fileName, ofType: "plist") ?? ""
+            url = Bundle.main.url(forResource: fileName, withExtension: "plist")!
         }
-        
-        return pPath
+
+        return url
     }
     
     class func readDataDictionary(fromPlistPath path: String?) -> [AnyHashable : Any]? {
@@ -79,6 +116,14 @@ class ERPlistManager: NSObject {
     class func readDataArray(fromPlistPath path: String?) -> [AnyHashable]? {
         
         return NSArray(contentsOfFile: path ?? "") as? [AnyHashable]
+    }
+    
+    class func readPlist(byName name: String) -> [AnyObject] {
+        
+        let plistURL = getPListURL(byName: name)
+        let plistData = try! Data(contentsOf: plistURL)
+        let plistProperty = try! PropertyListSerialization.propertyList(from: plistData, options: [], format: nil)
+        return plistProperty as! [AnyObject]
     }
     
     class func writeData(intoExisitngPlist name: String, newDataDictionary dataDict: [AnyHashable : Any]) {
@@ -104,10 +149,16 @@ class ERPlistManager: NSObject {
         print("Success = \(success)")
     }
     
-    class func getDocumentsDirectoryPathforFile(_ name: String) -> String {
-        //Get the documents directory path
-        let documentsDirectory = FileManager.documentsDir() //FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).map(\.path)
-        //let documentsDirectory = paths[0]
+    class func writeAnyObjectData(intoExisitngPlist name: String, objectData: [AnyObject])-> Bool {
+        
+        let documentsPath = self.getDocumentsDirectoryPathforFile(name)
+        let success = (objectData as AnyObject).write(toFile: documentsPath, atomically: true)
+        return success
+    }
+    
+    private class func getDocumentsDirectoryPathforFile(_ name: String) -> String {
+
+        let documentsDirectory = FileManager.documentsDir()
         let path = URL(fileURLWithPath: documentsDirectory).appendingPathComponent(name).path
         return path
     }
@@ -124,3 +175,4 @@ extension FileManager {
         return paths[0]
     }
 }
+
